@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+/* ── Google Font ── */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+@theme {
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
+
+/* ── Custom Keyframes (using tailwind arbitrary class animate-[...]) ── */
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-18px);
+  }
+}
+
+@keyframes flutter {
+  0% {
+    transform: rotate(-12deg) scale(1);
+  }
+
+  100% {
+    transform: rotate(12deg) scale(1.12);
+  }
+}
